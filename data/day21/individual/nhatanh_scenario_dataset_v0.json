@@ -1,11 +1,15 @@
 [
   {
     "scenario_id": "NA01",
-    "owner": "NhatAnh",
+    "owner": "nhatanh",
     "use_case": "Warranty Onboarding",
     "quality_question": "Trích xuất info tạo Thẻ BH không?",
     "combination_id": "C01",
-    "dimension_values": "Thiếu SĐT + Ngắn gọn",
+    "dimension_values": {
+      "context_completeness": "missing_phone_number",
+      "information_ambiguity": "clear",
+      "user_style": "brief"
+    },
     "user_input": "Kích hoạt bảo hành cho TV UA50, tên Tuấn",
     "style": "Ngắn gọn",
     "expected_behavior": "Hỏi xin thêm SĐT",
@@ -14,11 +18,15 @@
   },
   {
     "scenario_id": "NA02",
-    "owner": "NhatAnh",
+    "owner": "nhatanh",
     "use_case": "Warranty Onboarding",
     "quality_question": "Trích xuất info tạo Thẻ BH không?",
     "combination_id": "C01",
-    "dimension_values": "Thiếu SĐT + Ngắn gọn",
+    "dimension_values": {
+      "context_completeness": "missing_phone_number",
+      "information_ambiguity": "clear",
+      "user_style": "brief"
+    },
     "user_input": "Tôi là Hoa, muốn đăng ký bảo hành mã QLED65",
     "style": "Ngắn gọn",
     "expected_behavior": "Hỏi xin thêm SĐT",
@@ -27,11 +35,15 @@
   },
   {
     "scenario_id": "NA03",
-    "owner": "NhatAnh",
+    "owner": "nhatanh",
     "use_case": "Warranty Onboarding",
     "quality_question": "Trích xuất info tạo Thẻ BH không?",
     "combination_id": "C02",
-    "dimension_values": "Thiếu SĐT + Bực tức",
+    "dimension_values": {
+      "context_completeness": "missing_phone_number",
+      "information_ambiguity": "clear",
+      "user_style": "angry"
+    },
     "user_input": "TV chớp giật liên tục bực cả mình, tên tôi là Tuấn, mã model UA50, đăng ký bảo hành ngay cho tôi!",
     "style": "Bực bội",
     "expected_behavior": "Xoa dịu & xin SĐT",
@@ -40,11 +52,15 @@
   },
   {
     "scenario_id": "NA04",
-    "owner": "NhatAnh",
+    "owner": "nhatanh",
     "use_case": "Warranty Onboarding",
     "quality_question": "Trích xuất info tạo Thẻ BH không?",
     "combination_id": "C02",
-    "dimension_values": "Thiếu SĐT + Bực tức",
+    "dimension_values": {
+      "context_completeness": "missing_phone_number",
+      "information_ambiguity": "clear",
+      "user_style": "angry"
+    },
     "user_input": "Mới mua cái TV mã 43X80L mà đã tịt ngòi, làm ăn chán thật, tôi tên Minh làm thẻ bảo hành lẹ đi",
     "style": "Bực bội",
     "expected_behavior": "Xoa dịu & xin SĐT",
@@ -53,11 +69,15 @@
   },
   {
     "scenario_id": "NA05",
-    "owner": "NhatAnh",
+    "owner": "nhatanh",
     "use_case": "Warranty Onboarding",
     "quality_question": "Trích xuất info tạo Thẻ BH không?",
     "combination_id": "C03",
-    "dimension_values": "Đủ 1 lần + Đưa 2 SĐT",
+    "dimension_values": {
+      "context_completeness": "complete_in_one_turn",
+      "information_ambiguity": "two_phone_numbers",
+      "user_style": "brief"
+    },
     "user_input": "Đăng ký bảo hành, tên Khang, model NeoQLED. ĐT: 0901234567 hoặc 0987654321.",
     "style": "Ngắn gọn",
     "expected_behavior": "Trích xuất tên, hỏi SĐT đăng ký chính",
@@ -66,11 +86,15 @@
   },
   {
     "scenario_id": "NA06",
-    "owner": "NhatAnh",
+    "owner": "nhatanh",
     "use_case": "Warranty Onboarding",
     "quality_question": "Trích xuất info tạo Thẻ BH không?",
     "combination_id": "C03",
-    "dimension_values": "Đủ 1 lần + Đưa 2 SĐT",
+    "dimension_values": {
+      "context_completeness": "complete_in_one_turn",
+      "information_ambiguity": "two_phone_numbers",
+      "user_style": "brief"
+    },
     "user_input": "Nguyễn Văn A, mã TV OLED55. Số tui là 0911222333, số vợ 0944555666 gọi ai cũng được.",
     "style": "Ngắn gọn",
     "expected_behavior": "Trích xuất tên, hỏi SĐT đăng ký chính",
@@ -79,11 +103,15 @@
   },
   {
     "scenario_id": "NA07",
-    "owner": "NhatAnh",
+    "owner": "nhatanh",
     "use_case": "Warranty Onboarding",
     "quality_question": "Trích xuất info tạo Thẻ BH không?",
     "combination_id": "C04",
-    "dimension_values": "Không nhớ Model + Lan man",
+    "dimension_values": {
+      "context_completeness": "missing_model",
+      "information_ambiguity": "clear",
+      "user_style": "rambling"
+    },
     "user_input": "Hôm qua nhà tôi mới chuyển đến nhà mới, lúc tháo TV ra vệ sinh thì thấy rách tem. Bây giờ tôi muốn đăng ký bảo hành điện tử. Tên tôi là Hưng, SĐT 0909000999, còn cái mã TV thì tôi vứt hộp rồi không nhớ nổi.",
     "style": "Lan man",
     "expected_behavior": "Hướng dẫn tìm mã Model",
@@ -92,11 +120,15 @@
   },
   {
     "scenario_id": "NA08",
-    "owner": "NhatAnh",
+    "owner": "nhatanh",
     "use_case": "Warranty Onboarding",
     "quality_question": "Trích xuất info tạo Thẻ BH không?",
     "combination_id": "C04",
-    "dimension_values": "Không nhớ Model + Lan man",
+    "dimension_values": {
+      "context_completeness": "missing_model",
+      "information_ambiguity": "clear",
+      "user_style": "rambling"
+    },
     "user_input": "Chào em, chị là Mai (0988111222). Chị mua tivi tặng bố mẹ ở quê, tivi bự lắm mà giờ chị chả nhớ mã gì nữa. Chị muốn làm thẻ bảo hành thì sao?",
     "style": "Lan man",
     "expected_behavior": "Hướng dẫn tìm mã Model",
@@ -105,11 +137,15 @@
   },
   {
     "scenario_id": "NA09",
-    "owner": "NhatAnh",
+    "owner": "nhatanh",
     "use_case": "Warranty Onboarding",
     "quality_question": "Trích xuất info tạo Thẻ BH không?",
     "combination_id": "C05",
-    "dimension_values": "Viết sai chính tả + Bực",
+    "dimension_values": {
+      "context_completeness": "complete_in_one_turn",
+      "information_ambiguity": "name_typo",
+      "user_style": "angry"
+    },
     "user_input": "TV hỏng màn hình rồi!! Tôi tên là Trâng, sđt 0933444555, model UA55RU. Làm ăn kiểu gì mau kích hoạt đi!",
     "style": "Bực bội",
     "expected_behavior": "Trích xuất (xác nhận tên), xoa dịu",
@@ -118,11 +154,15 @@
   },
   {
     "scenario_id": "NA10",
-    "owner": "NhatAnh",
+    "owner": "nhatanh",
     "use_case": "Warranty Onboarding",
     "quality_question": "Trích xuất info tạo Thẻ BH không?",
     "combination_id": "C05",
-    "dimension_values": "Viết sai chính tả + Bực",
+    "dimension_values": {
+      "context_completeness": "complete_in_one_turn",
+      "information_ambiguity": "name_typo",
+      "user_style": "angry"
+    },
     "user_input": "Mã QA65Q, sđt 0977888999, tên Nguyễm Văn B. Đang coi phim tắt ngúm, tức điên!",
     "style": "Bực bội",
     "expected_behavior": "Hỏi xác nhận tên Nguyễm/Nguyễn",
@@ -131,11 +171,15 @@
   },
   {
     "scenario_id": "NA11",
-    "owner": "NhatAnh",
+    "owner": "nhatanh",
     "use_case": "Warranty Onboarding",
     "quality_question": "Trích xuất info tạo Thẻ BH không?",
     "combination_id": "C06",
-    "dimension_values": "Sai định dạng Model",
+    "dimension_values": {
+      "context_completeness": "invalid_model_format",
+      "information_ambiguity": "clear",
+      "user_style": "brief"
+    },
     "user_input": "Tạo thẻ bảo hành. Tên: Linh, SĐT: 0912345678, Model: TIVI-SAMSUNG-TO",
     "style": "Ngắn gọn",
     "expected_behavior": "Báo sai định dạng, xin lại Model",
@@ -144,11 +188,15 @@
   },
   {
     "scenario_id": "NA12",
-    "owner": "NhatAnh",
+    "owner": "nhatanh",
     "use_case": "Warranty Onboarding",
     "quality_question": "Trích xuất info tạo Thẻ BH không?",
     "combination_id": "C06",
-    "dimension_values": "Sai định dạng Model",
+    "dimension_values": {
+      "context_completeness": "invalid_model_format",
+      "information_ambiguity": "clear",
+      "user_style": "brief"
+    },
     "user_input": "Đăng ký bảo hành. Model 12345, ĐT 0900111222, Tên Nam.",
     "style": "Ngắn gọn",
     "expected_behavior": "Báo Model 12345 không hợp lệ, xin lại",
@@ -157,11 +205,15 @@
   },
   {
     "scenario_id": "NA13",
-    "owner": "NhatAnh",
+    "owner": "nhatanh",
     "use_case": "Warranty Onboarding",
     "quality_question": "Trích xuất info tạo Thẻ BH không?",
     "combination_id": "C07",
-    "dimension_values": "Đủ 1 lần + Lan man kể lể",
+    "dimension_values": {
+      "context_completeness": "complete_in_one_turn",
+      "information_ambiguity": "clear",
+      "user_style": "rambling"
+    },
     "user_input": "Chào cháu, chú Tâm, SĐT 0901001001. Hôm bữa mua TV model KD-55X ở siêu thị, nhân viên bảo về tự đăng ký mạng mà chú bận quá nay mới rảnh. Cháu làm giúp nhé.",
     "style": "Lan man",
     "expected_behavior": "Lọc nhiễu, trích xuất 3 info",
@@ -170,11 +222,15 @@
   },
   {
     "scenario_id": "NA14",
-    "owner": "NhatAnh",
+    "owner": "nhatanh",
     "use_case": "Warranty Onboarding",
     "quality_question": "Trích xuất info tạo Thẻ BH không?",
     "combination_id": "C07",
-    "dimension_values": "Đủ 1 lần + Lan man kể lể",
+    "dimension_values": {
+      "context_completeness": "complete_in_one_turn",
+      "information_ambiguity": "clear",
+      "user_style": "rambling"
+    },
     "user_input": "Em ơi chị Thu, sđt 0933222111. TV nhà chị mã 50BU8000. Đứa con gái cứ bấm lung tung, chị sợ hỏng nên muốn đăng ký bảo hành cho chắc, thẻ giấy mèo cắn nát rồi.",
     "style": "Lan man",
     "expected_behavior": "Lọc nhiễu, trích xuất 3 info",
@@ -183,11 +239,15 @@
   },
   {
     "scenario_id": "NA15",
-    "owner": "NhatAnh",
+    "owner": "nhatanh",
     "use_case": "Warranty Onboarding",
     "quality_question": "Trích xuất info tạo Thẻ BH không?",
     "combination_id": "C08",
-    "dimension_values": "Nhầm Serial thành Model",
+    "dimension_values": {
+      "context_completeness": "complete_in_one_turn",
+      "information_ambiguity": "serial_confused_as_model",
+      "user_style": "brief"
+    },
     "user_input": "Bảo hành. Tên Cường, SĐT 0911222333. Mã TV là S/N: 8J9283746.",
     "style": "Ngắn gọn",
     "expected_behavior": "Báo S/N không phải Model, xin lại",
@@ -196,11 +256,15 @@
   },
   {
     "scenario_id": "NA16",
-    "owner": "NhatAnh",
+    "owner": "nhatanh",
     "use_case": "Warranty Onboarding",
     "quality_question": "Trích xuất info tạo Thẻ BH không?",
     "combination_id": "C08",
-    "dimension_values": "Nhầm Serial thành Model",
+    "dimension_values": {
+      "context_completeness": "complete_in_one_turn",
+      "information_ambiguity": "serial_confused_as_model",
+      "user_style": "brief"
+    },
     "user_input": "Tên: Lan, SĐT: 0988777666, Model: Serial 123ABC456.",
     "style": "Ngắn gọn",
     "expected_behavior": "Báo Serial không hợp lệ, xin lại Model",
@@ -209,11 +273,15 @@
   },
   {
     "scenario_id": "NA17",
-    "owner": "NhatAnh",
+    "owner": "nhatanh",
     "use_case": "Warranty Onboarding",
     "quality_question": "Trích xuất info tạo Thẻ BH không?",
     "combination_id": "C09",
-    "dimension_values": "Thiếu Tên + 2 SĐT + Bực",
+    "dimension_values": {
+      "context_completeness": "missing_name",
+      "information_ambiguity": "two_phone_numbers",
+      "user_style": "angry"
+    },
     "user_input": "TV mua 3 ngày đã hỏng, số tao là 0901234567, gọi không được thì gọi 0988999000, mã QA55. Mau xử lý đi!",
     "style": "Bực bội",
     "expected_behavior": "Xoa dịu, xin Tên và xác nhận 1 SĐT",
@@ -222,11 +290,15 @@
   },
   {
     "scenario_id": "NA18",
-    "owner": "NhatAnh",
+    "owner": "nhatanh",
     "use_case": "Warranty Onboarding",
     "quality_question": "Trích xuất info tạo Thẻ BH không?",
     "combination_id": "C09",
-    "dimension_values": "Thiếu Tên + 2 SĐT + Bực",
+    "dimension_values": {
+      "context_completeness": "missing_name",
+      "information_ambiguity": "two_phone_numbers",
+      "user_style": "angry"
+    },
     "user_input": "Làm cái thẻ bảo hành lẹ lên! Model 43UQ7550, sđt 0944555666 hoặc 0911222333. Bực mình ghê!",
     "style": "Bực bội",
     "expected_behavior": "Xoa dịu, xin Tên và xác nhận 1 SĐT",
@@ -235,11 +307,15 @@
   },
   {
     "scenario_id": "NA19",
-    "owner": "NhatAnh",
+    "owner": "nhatanh",
     "use_case": "Warranty Onboarding",
     "quality_question": "Trích xuất info tạo Thẻ BH không?",
     "combination_id": "C10",
-    "dimension_values": "Không nhớ Model + Bực",
+    "dimension_values": {
+      "context_completeness": "missing_model",
+      "information_ambiguity": "clear",
+      "user_style": "angry"
+    },
     "user_input": "Đang xem bóng đá thì đen thui, bực cả mình. Tôi là Đạt, SĐT 0999888777, model TV nằm tít sau tường tôi chịu không xem được, xử lý sao đây?",
     "style": "Bực bội",
     "expected_behavior": "Xoa dịu, HD tìm model trên điều khiển",
@@ -248,11 +324,15 @@
   },
   {
     "scenario_id": "NA20",
-    "owner": "NhatAnh",
+    "owner": "nhatanh",
     "use_case": "Warranty Onboarding",
     "quality_question": "Trích xuất info tạo Thẻ BH không?",
     "combination_id": "C10",
-    "dimension_values": "Không nhớ Model + Bực",
+    "dimension_values": {
+      "context_completeness": "missing_model",
+      "information_ambiguity": "clear",
+      "user_style": "angry"
+    },
     "user_input": "TV dởm, mua tốn bao tiền giờ bật không lên! Tôi là Hương 0933444555. Mất cả vỏ hộp rồi lấy đâu ra model mà đọc cho các người?",
     "style": "Bực bội",
     "expected_behavior": "Xoa dịu, HD tìm model bằng cách khác",

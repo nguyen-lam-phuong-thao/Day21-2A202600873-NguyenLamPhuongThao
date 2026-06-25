@@ -1,0 +1,86 @@
+{
+  "json_source_of_truth": true,
+  "group_v1_row_count": 32,
+  "group_v1_source_owner_counts": {
+    "huy": 10,
+    "nhatanh": 10,
+    "thao": 12
+  },
+  "group_v1_set_type_counts": {
+    "representative": 12,
+    "challenge": 10,
+    "high-risk": 10
+  },
+  "owners": [
+    {
+      "owner": "huy",
+      "full_name": "Nguyễn Bình Huy",
+      "combination_count": 10,
+      "scenario_dataset_v0_rows": 20,
+      "selected_for_group_v1": 10,
+      "dimension_keys": [
+        "user_intent",
+        "device_type",
+        "appointment_status",
+        "risk_level"
+      ],
+      "coverage_gaps": [
+        "No payment or repair-fee scenarios.",
+        "No real technician availability lookup.",
+        "No image or video verification."
+      ]
+    },
+    {
+      "owner": "nhatanh",
+      "full_name": "Nhật Anh",
+      "combination_count": 10,
+      "scenario_dataset_v0_rows": 20,
+      "selected_for_group_v1": 10,
+      "dimension_keys": [
+        "context_completeness",
+        "information_ambiguity",
+        "user_style"
+      ],
+      "coverage_gaps": [
+        "No post-card edit scenarios.",
+        "No multilingual inputs.",
+        "No live validation service for models."
+      ]
+    },
+    {
+      "owner": "thao",
+      "full_name": "Nguyễn Lâm Phương Thảo",
+      "combination_count": 12,
+      "scenario_dataset_v0_rows": 24,
+      "selected_for_group_v1": 12,
+      "dimension_keys": [
+        "user_intent",
+        "context_completeness",
+        "evidence_state",
+        "risk_level"
+      ],
+      "coverage_gaps": [
+        "No order-tracking or payment scenarios.",
+        "No bundle-product or OCR invoice flows.",
+        "No live backend lookup tool calls."
+      ]
+    }
+  ],
+  "priority_group_rows": [
+    "G05",
+    "G06",
+    "G12",
+    "G15",
+    "G18",
+    "G24",
+    "G26",
+    "G29",
+    "G31"
+  ],
+  "known_group_gaps": [
+    "No multilingual or code-switching inputs across the merged set.",
+    "No image-grounded or OCR-grounded evidence rows in canonical v1.",
+    "No payment, billing, or order-tracking slices yet.",
+    "No real tool-calling or backend integration scenarios yet."
+  ]
+}

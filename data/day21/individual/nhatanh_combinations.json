@@ -1,0 +1,122 @@
+[
+  {
+    "combination_id": "C01",
+    "owner": "nhatanh",
+    "dimension_values": {
+      "context_completeness": "missing_phone_number",
+      "information_ambiguity": "clear",
+      "user_style": "brief"
+    },
+    "expected_behavior": "Hỏi xin thêm số điện thoại để hoàn tất việc tạo thẻ.",
+    "why_included": "Baseline quan trọng cho trường hợp thiếu đúng một trường bắt buộc.",
+    "set_type": "representative"
+  },
+  {
+    "combination_id": "C02",
+    "owner": "nhatanh",
+    "dimension_values": {
+      "context_completeness": "missing_phone_number",
+      "information_ambiguity": "clear",
+      "user_style": "angry"
+    },
+    "expected_behavior": "Xoa dịu cảm xúc và hỏi xin số điện thoại còn thiếu.",
+    "why_included": "Kiểm tra agent vừa giữ bình tĩnh vừa hỏi đúng thông tin còn thiếu.",
+    "set_type": "challenge"
+  },
+  {
+    "combination_id": "C03",
+    "owner": "nhatanh",
+    "dimension_values": {
+      "context_completeness": "complete_in_one_turn",
+      "information_ambiguity": "two_phone_numbers",
+      "user_style": "brief"
+    },
+    "expected_behavior": "Trích xuất thông tin hiện có và hỏi xác nhận số điện thoại đăng ký chính.",
+    "why_included": "Bắt agent phải xử lý ambiguity thay vì tự chọn một số điện thoại.",
+    "set_type": "representative"
+  },
+  {
+    "combination_id": "C04",
+    "owner": "nhatanh",
+    "dimension_values": {
+      "context_completeness": "missing_model",
+      "information_ambiguity": "clear",
+      "user_style": "rambling"
+    },
+    "expected_behavior": "Hướng dẫn khách cách tìm mã model trước khi tạo thẻ bảo hành.",
+    "why_included": "Đo hành vi hỗ trợ khi khách không nhớ model nhưng vẫn muốn tiếp tục.",
+    "set_type": "representative"
+  },
+  {
+    "combination_id": "C05",
+    "owner": "nhatanh",
+    "dimension_values": {
+      "context_completeness": "complete_in_one_turn",
+      "information_ambiguity": "name_typo",
+      "user_style": "angry"
+    },
+    "expected_behavior": "Trích xuất thông tin, xoa dịu và xác nhận lại tên bị viết sai trước khi tạo thẻ.",
+    "why_included": "Kết hợp lỗi đánh máy và cảm xúc tiêu cực trong cùng một lượt nhập.",
+    "set_type": "high-risk"
+  },
+  {
+    "combination_id": "C06",
+    "owner": "nhatanh",
+    "dimension_values": {
+      "context_completeness": "invalid_model_format",
+      "information_ambiguity": "clear",
+      "user_style": "brief"
+    },
+    "expected_behavior": "Báo mã model sai định dạng và yêu cầu khách cung cấp lại.",
+    "why_included": "Kiểm tra guardrail về định dạng dữ liệu trước khi tạo thẻ.",
+    "set_type": "representative"
+  },
+  {
+    "combination_id": "C07",
+    "owner": "nhatanh",
+    "dimension_values": {
+      "context_completeness": "complete_in_one_turn",
+      "information_ambiguity": "clear",
+      "user_style": "rambling"
+    },
+    "expected_behavior": "Bỏ qua phần kể lể và chỉ trích xuất 3 trường cần thiết để xác nhận tạo thẻ.",
+    "why_included": "Đánh giá khả năng lọc nhiễu và bám sát mục tiêu thu thập dữ liệu.",
+    "set_type": "challenge"
+  },
+  {
+    "combination_id": "C08",
+    "owner": "nhatanh",
+    "dimension_values": {
+      "context_completeness": "complete_in_one_turn",
+      "information_ambiguity": "serial_confused_as_model",
+      "user_style": "brief"
+    },
+    "expected_behavior": "Phân biệt serial với model và yêu cầu khách cung cấp lại mã model đúng.",
+    "why_included": "Ngăn agent lấy serial làm model và gây hallucination ở đầu ra.",
+    "set_type": "high-risk"
+  },
+  {
+    "combination_id": "C09",
+    "owner": "nhatanh",
+    "dimension_values": {
+      "context_completeness": "missing_name",
+      "information_ambiguity": "two_phone_numbers",
+      "user_style": "angry"
+    },
+    "expected_behavior": "Xoa dịu, xin thêm tên và hỏi xác nhận số điện thoại liên hệ chính.",
+    "why_included": "Tình huống nhiều nhiệm vụ cùng lúc: thiếu tên, hai số điện thoại, đang bực tức.",
+    "set_type": "high-risk"
+  },
+  {
+    "combination_id": "C10",
+    "owner": "nhatanh",
+    "dimension_values": {
+      "context_completeness": "missing_model",
+      "information_ambiguity": "clear",
+      "user_style": "angry"
+    },
+    "expected_behavior": "Xoa dịu và đưa hướng dẫn ngắn gọn để khách tìm lại mã model.",
+    "why_included": "Case thực tế khi khách mất kiên nhẫn và không còn hộp/model để tra cứu.",
+    "set_type": "high-risk"
+  }
+]

@@ -1,0 +1,427 @@
+{
+  "file_level_decisions": [
+    {
+      "decision_id": "FD01",
+      "kept_paths": [
+        "README_DAY21.md",
+        "docs/day21/individual/",
+        "data/day21/individual/",
+        "data/day21/group/",
+        "prompts/day21/individual/"
+      ],
+      "removed_legacy_paths": [
+        "docs/REPORT_DAY21_INDIVIDUAL.md",
+        "docs/ai_generated_inputs_raw_and_filtered.md",
+        "docs/day21/Huy_REPORT_DAY21_INDIVIDUAL.md",
+        "docs/day21/Huy_ai_generated_inputs_raw_and_filtered.md",
+        "docs/day21/ai_generated_inputs_raw_and_filtered.md",
+        "docs/day21/ai_generated_inputs_raw_and_filtered_NA.md",
+        "data/Day21_Individual_Dataset.json",
+        "data/individual_combinations.json",
+        "data/individual_scenario_dataset_v0.json",
+        "data/day21/Huy_individual_combinations.json",
+        "data/day21/Huy_individual_scenario_dataset_v0.csv",
+        "data/day21/Huy_individual_scenario_dataset_v0.json",
+        "data/day21/individual_combinations.json",
+        "data/day21/individual_scenario_dataset_v0.csv",
+        "data/day21/individual_scenario_dataset_v0.json",
+        "prompts/ai_generate_user_inputs_prompt.txt",
+        "prompts/day21/Huy_ai_generate_user_inputs_prompt.txt",
+        "prompts/day21/ai_generate_user_inputs_prompt.txt",
+        "prompts/day21/ai_generate_user_inputs_prompt_NA.txt"
+      ],
+      "rationale": "Moved Day21 submission assets into the required structure and removed redundant legacy copies once the canonical files existed."
+    },
+    {
+      "decision_id": "FD02",
+      "decision": "json_canonical_over_csv",
+      "rationale": "CSV review copies duplicated the same scenario rows. JSON remains the only source of truth for grading and future merges."
+    }
+  ],
+  "row_level_decisions": [
+    {
+      "decision_id": "MD01",
+      "scope": "row_merge",
+      "group_scenario_id": "G01",
+      "selected_source_row": "huy:S01",
+      "collapsed_source_rows": [
+        "huy:S02"
+      ],
+      "combination_id": "C01",
+      "decision": "kept_primary_variant",
+      "rationale": "Both source rows target C01. The kept row is the slightly clearer anchor example for review, while the collapsed row is a near-duplicate paraphrase with the same expected behavior and set type."
+    },
+    {
+      "decision_id": "MD02",
+      "scope": "row_merge",
+      "group_scenario_id": "G02",
+      "selected_source_row": "huy:S03",
+      "collapsed_source_rows": [
+        "huy:S04"
+      ],
+      "combination_id": "C02",
+      "decision": "kept_primary_variant",
+      "rationale": "Both source rows target C02. The kept row is the slightly clearer anchor example for review, while the collapsed row is a near-duplicate paraphrase with the same expected behavior and set type."
+    },
+    {
+      "decision_id": "MD03",
+      "scope": "row_merge",
+      "group_scenario_id": "G03",
+      "selected_source_row": "huy:S05",
+      "collapsed_source_rows": [
+        "huy:S06"
+      ],
+      "combination_id": "C03",
+      "decision": "kept_primary_variant",
+      "rationale": "Both source rows target C03. The kept row is the slightly clearer anchor example for review, while the collapsed row is a near-duplicate paraphrase with the same expected behavior and set type."
+    },
+    {
+      "decision_id": "MD04",
+      "scope": "row_merge",
+      "group_scenario_id": "G04",
+      "selected_source_row": "huy:S07",
+      "collapsed_source_rows": [
+        "huy:S08"
+      ],
+      "combination_id": "C04",
+      "decision": "kept_primary_variant",
+      "rationale": "Both source rows target C04. The kept row is the slightly clearer anchor example for review, while the collapsed row is a near-duplicate paraphrase with the same expected behavior and set type."
+    },
+    {
+      "decision_id": "MD05",
+      "scope": "row_merge",
+      "group_scenario_id": "G05",
+      "selected_source_row": "huy:S09",
+      "collapsed_source_rows": [
+        "huy:S10"
+      ],
+      "combination_id": "C05",
+      "decision": "kept_primary_variant",
+      "rationale": "Both source rows target C05. The kept row is the slightly clearer anchor example for review, while the collapsed row is a near-duplicate paraphrase with the same expected behavior and set type."
+    },
+    {
+      "decision_id": "MD06",
+      "scope": "row_merge",
+      "group_scenario_id": "G06",
+      "selected_source_row": "huy:S11",
+      "collapsed_source_rows": [
+        "huy:S12"
+      ],
+      "combination_id": "C06",
+      "decision": "kept_primary_variant",
+      "rationale": "Both source rows target C06. The kept row is the slightly clearer anchor example for review, while the collapsed row is a near-duplicate paraphrase with the same expected behavior and set type."
+    },
+    {
+      "decision_id": "MD07",
+      "scope": "row_merge",
+      "group_scenario_id": "G07",
+      "selected_source_row": "huy:S13",
+      "collapsed_source_rows": [
+        "huy:S14"
+      ],
+      "combination_id": "C07",
+      "decision": "kept_primary_variant",
+      "rationale": "Both source rows target C07. The kept row is the slightly clearer anchor example for review, while the collapsed row is a near-duplicate paraphrase with the same expected behavior and set type."
+    },
+    {
+      "decision_id": "MD08",
+      "scope": "row_merge",
+      "group_scenario_id": "G08",
+      "selected_source_row": "huy:S15",
+      "collapsed_source_rows": [
+        "huy:S16"
+      ],
+      "combination_id": "C08",
+      "decision": "kept_primary_variant",
+      "rationale": "Both source rows target C08. The kept row is the slightly clearer anchor example for review, while the collapsed row is a near-duplicate paraphrase with the same expected behavior and set type."
+    },
+    {
+      "decision_id": "MD09",
+      "scope": "row_merge",
+      "group_scenario_id": "G09",
+      "selected_source_row": "huy:S17",
+      "collapsed_source_rows": [
+        "huy:S18"
+      ],
+      "combination_id": "C09",
+      "decision": "kept_primary_variant",
+      "rationale": "Both source rows target C09. The kept row is the slightly clearer anchor example for review, while the collapsed row is a near-duplicate paraphrase with the same expected behavior and set type."
+    },
+    {
+      "decision_id": "MD10",
+      "scope": "row_merge",
+      "group_scenario_id": "G10",
+      "selected_source_row": "huy:S19",
+      "collapsed_source_rows": [
+        "huy:S20"
+      ],
+      "combination_id": "C10",
+      "decision": "kept_primary_variant",
+      "rationale": "Both source rows target C10. The kept row is the slightly clearer anchor example for review, while the collapsed row is a near-duplicate paraphrase with the same expected behavior and set type."
+    },
+    {
+      "decision_id": "MD11",
+      "scope": "row_merge",
+      "group_scenario_id": "G11",
+      "selected_source_row": "nhatanh:NA01",
+      "collapsed_source_rows": [
+        "nhatanh:NA02"
+      ],
+      "combination_id": "C01",
+      "decision": "kept_primary_variant",
+      "rationale": "Both source rows target C01. The kept row is the slightly clearer anchor example for review, while the collapsed row is a near-duplicate paraphrase with the same expected behavior and set type."
+    },
+    {
+      "decision_id": "MD12",
+      "scope": "row_merge",
+      "group_scenario_id": "G12",
+      "selected_source_row": "nhatanh:NA03",
+      "collapsed_source_rows": [
+        "nhatanh:NA04"
+      ],
+      "combination_id": "C02",
+      "decision": "kept_primary_variant",
+      "rationale": "Both source rows target C02. The kept row is the slightly clearer anchor example for review, while the collapsed row is a near-duplicate paraphrase with the same expected behavior and set type."
+    },
+    {
+      "decision_id": "MD13",
+      "scope": "row_merge",
+      "group_scenario_id": "G13",
+      "selected_source_row": "nhatanh:NA05",
+      "collapsed_source_rows": [
+        "nhatanh:NA06"
+      ],
+      "combination_id": "C03",
+      "decision": "kept_primary_variant",
+      "rationale": "Both source rows target C03. The kept row is the slightly clearer anchor example for review, while the collapsed row is a near-duplicate paraphrase with the same expected behavior and set type."
+    },
+    {
+      "decision_id": "MD14",
+      "scope": "row_merge",
+      "group_scenario_id": "G14",
+      "selected_source_row": "nhatanh:NA07",
+      "collapsed_source_rows": [
+        "nhatanh:NA08"
+      ],
+      "combination_id": "C04",
+      "decision": "kept_primary_variant",
+      "rationale": "Both source rows target C04. The kept row is the slightly clearer anchor example for review, while the collapsed row is a near-duplicate paraphrase with the same expected behavior and set type."
+    },
+    {
+      "decision_id": "MD15",
+      "scope": "row_merge",
+      "group_scenario_id": "G15",
+      "selected_source_row": "nhatanh:NA09",
+      "collapsed_source_rows": [
+        "nhatanh:NA10"
+      ],
+      "combination_id": "C05",
+      "decision": "kept_primary_variant",
+      "rationale": "Both source rows target C05. The kept row is the slightly clearer anchor example for review, while the collapsed row is a near-duplicate paraphrase with the same expected behavior and set type."
+    },
+    {
+      "decision_id": "MD16",
+      "scope": "row_merge",
+      "group_scenario_id": "G16",
+      "selected_source_row": "nhatanh:NA11",
+      "collapsed_source_rows": [
+        "nhatanh:NA12"
+      ],
+      "combination_id": "C06",
+      "decision": "kept_primary_variant",
+      "rationale": "Both source rows target C06. The kept row is the slightly clearer anchor example for review, while the collapsed row is a near-duplicate paraphrase with the same expected behavior and set type."
+    },
+    {
+      "decision_id": "MD17",
+      "scope": "row_merge",
+      "group_scenario_id": "G17",
+      "selected_source_row": "nhatanh:NA13",
+      "collapsed_source_rows": [
+        "nhatanh:NA14"
+      ],
+      "combination_id": "C07",
+      "decision": "kept_primary_variant",
+      "rationale": "Both source rows target C07. The kept row is the slightly clearer anchor example for review, while the collapsed row is a near-duplicate paraphrase with the same expected behavior and set type."
+    },
+    {
+      "decision_id": "MD18",
+      "scope": "row_merge",
+      "group_scenario_id": "G18",
+      "selected_source_row": "nhatanh:NA15",
+      "collapsed_source_rows": [
+        "nhatanh:NA16"
+      ],
+      "combination_id": "C08",
+      "decision": "kept_primary_variant",
+      "rationale": "Both source rows target C08. The kept row is the slightly clearer anchor example for review, while the collapsed row is a near-duplicate paraphrase with the same expected behavior and set type."
+    },
+    {
+      "decision_id": "MD19",
+      "scope": "row_merge",
+      "group_scenario_id": "G19",
+      "selected_source_row": "nhatanh:NA17",
+      "collapsed_source_rows": [
+        "nhatanh:NA18"
+      ],
+      "combination_id": "C09",
+      "decision": "kept_primary_variant",
+      "rationale": "Both source rows target C09. The kept row is the slightly clearer anchor example for review, while the collapsed row is a near-duplicate paraphrase with the same expected behavior and set type."
+    },
+    {
+      "decision_id": "MD20",
+      "scope": "row_merge",
+      "group_scenario_id": "G20",
+      "selected_source_row": "nhatanh:NA19",
+      "collapsed_source_rows": [
+        "nhatanh:NA20"
+      ],
+      "combination_id": "C10",
+      "decision": "kept_primary_variant",
+      "rationale": "Both source rows target C10. The kept row is the slightly clearer anchor example for review, while the collapsed row is a near-duplicate paraphrase with the same expected behavior and set type."
+    },
+    {
+      "decision_id": "MD21",
+      "scope": "row_merge",
+      "group_scenario_id": "G21",
+      "selected_source_row": "thao:S01",
+      "collapsed_source_rows": [
+        "thao:S02"
+      ],
+      "combination_id": "C01",
+      "decision": "kept_primary_variant",
+      "rationale": "Both source rows target C01. The kept row is the slightly clearer anchor example for review, while the collapsed row is a near-duplicate paraphrase with the same expected behavior and set type."
+    },
+    {
+      "decision_id": "MD22",
+      "scope": "row_merge",
+      "group_scenario_id": "G22",
+      "selected_source_row": "thao:S03",
+      "collapsed_source_rows": [
+        "thao:S04"
+      ],
+      "combination_id": "C02",
+      "decision": "kept_primary_variant",
+      "rationale": "Both source rows target C02. The kept row is the slightly clearer anchor example for review, while the collapsed row is a near-duplicate paraphrase with the same expected behavior and set type."
+    },
+    {
+      "decision_id": "MD23",
+      "scope": "row_merge",
+      "group_scenario_id": "G23",
+      "selected_source_row": "thao:S05",
+      "collapsed_source_rows": [
+        "thao:S06"
+      ],
+      "combination_id": "C03",
+      "decision": "kept_primary_variant",
+      "rationale": "Both source rows target C03. The kept row is the slightly clearer anchor example for review, while the collapsed row is a near-duplicate paraphrase with the same expected behavior and set type."
+    },
+    {
+      "decision_id": "MD24",
+      "scope": "row_merge",
+      "group_scenario_id": "G24",
+      "selected_source_row": "thao:S07",
+      "collapsed_source_rows": [
+        "thao:S08"
+      ],
+      "combination_id": "C04",
+      "decision": "kept_primary_variant",
+      "rationale": "Both source rows target C04. The kept row is the slightly clearer anchor example for review, while the collapsed row is a near-duplicate paraphrase with the same expected behavior and set type."
+    },
+    {
+      "decision_id": "MD25",
+      "scope": "row_merge",
+      "group_scenario_id": "G25",
+      "selected_source_row": "thao:S09",
+      "collapsed_source_rows": [
+        "thao:S10"
+      ],
+      "combination_id": "C05",
+      "decision": "kept_primary_variant",
+      "rationale": "Both source rows target C05. The kept row is the slightly clearer anchor example for review, while the collapsed row is a near-duplicate paraphrase with the same expected behavior and set type."
+    },
+    {
+      "decision_id": "MD26",
+      "scope": "row_merge",
+      "group_scenario_id": "G26",
+      "selected_source_row": "thao:S11",
+      "collapsed_source_rows": [
+        "thao:S12"
+      ],
+      "combination_id": "C06",
+      "decision": "kept_primary_variant",
+      "rationale": "Both source rows target C06. The kept row is the slightly clearer anchor example for review, while the collapsed row is a near-duplicate paraphrase with the same expected behavior and set type."
+    },
+    {
+      "decision_id": "MD27",
+      "scope": "row_merge",
+      "group_scenario_id": "G27",
+      "selected_source_row": "thao:S13",
+      "collapsed_source_rows": [
+        "thao:S14"
+      ],
+      "combination_id": "C07",
+      "decision": "kept_primary_variant",
+      "rationale": "Both source rows target C07. The kept row is the slightly clearer anchor example for review, while the collapsed row is a near-duplicate paraphrase with the same expected behavior and set type."
+    },
+    {
+      "decision_id": "MD28",
+      "scope": "row_merge",
+      "group_scenario_id": "G28",
+      "selected_source_row": "thao:S15",
+      "collapsed_source_rows": [
+        "thao:S16"
+      ],
+      "combination_id": "C08",
+      "decision": "kept_primary_variant",
+      "rationale": "Both source rows target C08. The kept row is the slightly clearer anchor example for review, while the collapsed row is a near-duplicate paraphrase with the same expected behavior and set type."
+    },
+    {
+      "decision_id": "MD29",
+      "scope": "row_merge",
+      "group_scenario_id": "G29",
+      "selected_source_row": "thao:S17",
+      "collapsed_source_rows": [
+        "thao:S18"
+      ],
+      "combination_id": "C09",
+      "decision": "kept_primary_variant",
+      "rationale": "Both source rows target C09. The kept row is the slightly clearer anchor example for review, while the collapsed row is a near-duplicate paraphrase with the same expected behavior and set type."
+    },
+    {
+      "decision_id": "MD30",
+      "scope": "row_merge",
+      "group_scenario_id": "G30",
+      "selected_source_row": "thao:S19",
+      "collapsed_source_rows": [
+        "thao:S20"
+      ],
+      "combination_id": "C10",
+      "decision": "kept_primary_variant",
+      "rationale": "Both source rows target C10. The kept row is the slightly clearer anchor example for review, while the collapsed row is a near-duplicate paraphrase with the same expected behavior and set type."
+    },
+    {
+      "decision_id": "MD31",
+      "scope": "row_merge",
+      "group_scenario_id": "G31",
+      "selected_source_row": "thao:S21",
+      "collapsed_source_rows": [
+        "thao:S22"
+      ],
+      "combination_id": "C11",
+      "decision": "kept_primary_variant",
+      "rationale": "Both source rows target C11. The kept row is the slightly clearer anchor example for review, while the collapsed row is a near-duplicate paraphrase with the same expected behavior and set type."
+    },
+    {
+      "decision_id": "MD32",
+      "scope": "row_merge",
+      "group_scenario_id": "G32",
+      "selected_source_row": "thao:S23",
+      "collapsed_source_rows": [
+        "thao:S24"
+      ],
+      "combination_id": "C12",
+      "decision": "kept_primary_variant",
+      "rationale": "Both source rows target C12. The kept row is the slightly clearer anchor example for review, while the collapsed row is a near-duplicate paraphrase with the same expected behavior and set type."
+    }
+  ]
+}
