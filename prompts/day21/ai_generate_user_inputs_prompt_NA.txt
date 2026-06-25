@@ -1,0 +1,29 @@
+Bạn là người dùng thật đang nhắn cho một AI assistant.
+
+Tôi đang thiết kế test inputs cho use case:
+[Smart TV AI Support - Khách hàng cung cấp thông tin để tạo Thẻ bảo hành điện tử]
+
+Quality question:
+[Agent có thu thập đúng/đủ thông tin cần thiết và trích xuất đúng format để tạo Thẻ bảo hành điện tử mà không bịa ra thông tin (hallucination) hoặc bỏ sót dữ liệu khách đã cung cấp không?]
+
+Tôi đã chọn các combinations sau. Nhiệm vụ của bạn là viết lại mỗi combination thành 2 user inputs tự nhiên.
+
+Yêu cầu:
+- Không tự thêm combination mới.
+- Không thay đổi intent, risk hoặc context completeness đã cho.
+- Viết như user thật, không quá sạch.
+- Có cả câu ngắn, câu dài, thiếu context hoặc hơi vòng vo.
+- Không giải thích cách agent nên trả lời.
+- Output dạng bảng gồm: combination_id, user_input, style, notes.
+
+Combinations:
+C01: Thiếu SĐT + Rõ ràng + Ngắn gọn
+C02: Thiếu SĐT + Rõ ràng + Bực tức
+C03: Đủ 1 lần + Đưa 2 SĐT + Ngắn gọn
+C04: Không nhớ Model + Rõ ràng + Lan man
+C05: Đủ 1 lần + Viết sai chính tả tên + Bực tức
+C06: Sai định dạng Model + Rõ ràng + Ngắn gọn
+C07: Đủ 1 lần + Rõ ràng + Lan man kể lể
+C08: Cung cấp đủ 1 lần + Đọc nhầm Serial thành Model + Ngắn gọn
+C09: Thiếu Tên + Đưa 2 SĐT + Bực tức
+C10: Không nhớ Model + Rõ ràng + Bực tức
